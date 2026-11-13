@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0B6B4F"/>
+      <stop offset="1" stop-color="#063A2C"/>
+    </linearGradient>
+    <linearGradient id="liquid" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FF9A1F"/>
+      <stop offset="1" stop-color="#E5301E"/>
+    </linearGradient>
+    <clipPath id="flaskClip">
+      <path d="M222 120 V196 L138 362 Q126 392 158 392 H354 Q386 392 374 362 L290 196 V120 Z"/>
+    </clipPath>
+  </defs>
+
+  <rect width="512" height="512" fill="url(#bg)"/>
+  <circle cx="256" cy="256" r="230" fill="none" stroke="#ffffff" stroke-opacity="0.08" stroke-width="2"/>
+
+  <!-- liquid -->
+  <g clip-path="url(#flaskClip)">
+    <rect x="100" y="262" width="320" height="140" fill="url(#liquid)"/>
+    <path d="M100 262 Q150 248 200 262 T300 262 T420 262 V272 H100 Z" fill="#FFB84D" opacity="0.55"/>
+  </g>
+
+  <!-- flask outline -->
+  <path d="M222 120 V196 L138 362 Q126 392 158 392 H354 Q386 392 374 362 L290 196 V120"
+        fill="none" stroke="#ffffff" stroke-width="14" stroke-linejoin="round" stroke-linecap="round"/>
+  <rect x="204" y="104" width="104" height="20" rx="10" fill="#ffffff"/>
+
+  <!-- big 7 -->
+  <text x="256" y="378" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif"
+        font-weight="900" font-size="132" fill="#ffffff">7</text>
+
+  <!-- bubbles -->
+  <circle cx="284" cy="78" r="12" fill="#9BE15D"/>
+  <circle cx="238" cy="60" r="8" fill="#9BE15D" opacity="0.85"/>
+  <circle cx="268" cy="36" r="6" fill="#9BE15D" opacity="0.7"/>
+
+  <!-- label -->
+  <text x="256" y="462" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif"
+        font-weight="800" font-size="58" letter-spacing="6" fill="#ffffff">7LAB</text>
+</svg>
